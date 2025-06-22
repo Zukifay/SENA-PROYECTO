@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilos_login.css">
+    <title>Rafastore H.A - Inicio Sesion</title>
+</head>
+<body>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido a Rafastore H.A</h2>
+                <p>Para unirte a nuestra comunidad por favor Iniciar Sesión</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una Cuenta Con</h2>
+                <div class="icons">
+                    <a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&emr=1&ifkv=ASKV5Mgjjz4Hj451BV42g_1TDtWBd_gKu1AmNR76LFq-EihpLJWEsgbs9FGw2Ky65nrwzQlVuk2BJQ&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1926853743%3A1747770289603802" target="_blank">
+                    <i class='bx bxl-google'></i>
+                    <script src="https://apis.google.com/js/platform.js" async defer></script>
+                    <meta name="google-signin-client_id" content="108061463371.apps.googleusercontent.com">
+                    
+                    </a>
+                </div>
+                <p>Sino usar tu correo electronico para registrarte</p>
+                <form method="POST" class="form form-register" id="formRegister" novalidate>
+                    <div>
+                        <label>
+                            <i class='bx bx-user' ></i>
+                            <input type="text" placeholder="Nombre Usuario" name="userName" >
+                        </label>
+                    </div>
+                    <div>
+                        <label >
+                            <i class='bx bx-envelope' ></i>
+                            <input type="email" placeholder="Correo Electronico" name="userEmail" >
+                        </label>
+                    </div>
+                   <div>
+                        <label>
+                            <i class='bx bx-lock-alt' ></i>
+                            <input type="password" placeholder="Contraseña" name="userPassword">
+                        </label>
+                   </div>
+                   <div>
+                <label>
+                    <i class='bx bx-check-shield'></i>
+                    <input type="text" id="captcha-input" name="captchaInput" placeholder="Ingresa el código" required>
+                </label>
+                <div id="codigoCaptcha" style="margin-top: 5px; font-weight: bold; font-size: 14px; color: #333;"></div>
+            </div>
+                    <input type="submit" value="Registrarse">
+                    <div class="alerta-error">Todos los campos son obligatorios</div>
+                    <div class="alerta-exito">Te registraste Correctamente</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Quieres saber mas?</h2>
+                <p>Para unirte a nuestra comunidad por favor registrate</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión Con</h2>
+                <div class="icons">
+    <a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&emr=1&ifkv=ASKV5Mgjjz4Hj451BV42g_1TDtWBd_gKu1AmNR76LFq-EihpLJWEsgbs9FGw2Ky65nrwzQlVuk2BJQ&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1926853743%3A1747770289603802" target="_blank">
+        <i class='bx bxl-google'></i>
+    </a>
+</div>
+                <p>Si ya estas registrado iniciar sesión</p>
+                <form class="form form-login"novalidate>
+                    <div>
+                        <label >
+                            <i class='bx bx-envelope' ></i>
+                            <input type="email" placeholder="Correo Electronico" name="userEmail">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt' ></i>
+                            <input type="password" placeholder="Contraseña" name="userPassword">
+                        </label>
+                    </div>
+                    <input type="submit" value="Iniciar Sesión">
+                    <div class="alerta-error">Todos los campos son obligatorios</div>
+                    <div class="alerta-exito">Iniciaste Sesion Correctamente</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script> 
+    <script src="js/register.js" type="module"></script>
+    <script src="js/iffe_login.js"></script>
+    <script src="js/login_modulo.js"></script>
+
+</body>
+</html>
